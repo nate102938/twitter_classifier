@@ -18,6 +18,8 @@ Data collection was performed in a separate [Data Collection Jupyter Notebook](.
 - The accounts file is important to keep current in order to avoid downloading tweets from the same account multiple times as users of the Twitter API are limited to the number of tweets that can be pulled in a one month time period. As such, when tweets for a particular handle are downloaded, the tweets are immediately appended to a tweets CSV file (tweet_list.csv) and the accounts file is updated to mark that handle as 'done'.
 
 # Exploratory Data Analysis
+EDA was performed in a separate [EDA Jupyter Notebook](./notebook_03_eda.ipynb). 
+
 The following top words were identified for each of the primary classifications in EDA:
 
 ## Business
