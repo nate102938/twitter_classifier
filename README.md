@@ -12,7 +12,14 @@ The stakeholder is Twitter itself, and I'm illustrating to Twitter the ability t
 # Data Understanding
 For this analysis, I utilized ~136K tweets pulled from 612 Twitter accounts by me from the Twitter API. These accounts were manually selected by me to represent each account class that I am trying to predict. 
 
+Data collection was performed in a separate [Data Collection Jupyter Notebook](./notebook_02_data_collection.ipynb). 
+- The notebook uses the Tweepy package to download tweets for specified accounts from the Twitter API. In order to use the API, you need your own bearer key, which serves as your authentication into the API. If you are planning to use the API, put your bearer key into the variable 'bearer_key' in the constants section.  
+- The notebook uses a manually created account list file (accounts.csv) which has all of the Twitter handles to download tweets from, the class to assign to each handle, and how many tweets to get download from each handle.
+- The accounts file is important to keep current in order to avoid downloading tweets from the same account multiple times as users of the Twitter API are limited to the number of tweets that can be pulled in a one month time period. As such, when tweets for a particular handle are downloaded, the tweets are immediately appended to a tweets CSV file (tweet_list.csv) and the accounts file is updated to mark that handle as 'done'.
+
 # Exploratory Data Analysis
+EDA was performed in a separate [EDA Jupyter Notebook](./notebook_03_eda.ipynb). 
+
 The following top words were identified for each of the primary classifications in EDA:
 
 ## Business
@@ -38,6 +45,11 @@ Model 1 predicts the primary interest of a user with 98% accuracy. If the primar
 
 These are very good results and should help Twitter improve its user segmentation and targeted advertising processes for a better user experience and better advertising metrics (clicks and conversions).
 
+# Model Deployment and Demonstration
+The vectorizer and model for both model 1 and model 2 were saved to file for deployment and demonstration purposes.    
+
+To demonstrate that the model works, I created a [Deployment Jupyter Notebook](./notebook_04_deployment.ipynb) that uses a Gradio web app to take in a Twitter handle of any twitter user and it outputs the user's primary interest after running the user's most recent 200 tweets through the model(s).  
+
 # Next Steps
 Recommendation to Twitter for next steps: 
 - Deploy the model at Twitter to better segment its users and improve targeted advertising.
@@ -45,7 +57,7 @@ Recommendation to Twitter for next steps:
 
 ## For More Information   
 
-See the full analysis in the [Jupyter Notebook](./notebook_01_main.ipynb) or review this [presentation](./presentation.pdf).
+See the full analysis in the [Main Jupyter Notebook](./notebook_01_main.ipynb) or review this [presentation](./presentation.pdf).
 
 **For additional info, contact:**
 - Nate Kist: natekist@outlook.com
