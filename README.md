@@ -10,19 +10,29 @@ The purpose of this classification system is more successful targeted advertisin
 The stakeholder is Twitter itself, and I'm illustrating to Twitter the ability to use NLP/predictive machine learning on a user's tweets to better segment its users for the purpose of targeted advertising.  Having the ability to identify the primary interest of a user is invaluable for segmentation / targeted advertising.
 
 # Data Understanding
-For this analysis, I utilized ~136K tweets pulled from 612 Twitter accounts by me from the Twitter API. These accounts were manually selected by me to represent each account class that I am trying to predict.
-
-The model created for the classification of users into the four primary segments is known as model 1. For model 1, I scaled down the population of political tweets used to train the model to a smaller dataset and separate file consisting of ~101K tweets.
-
-Model 2 representions the secondary classfication of political users between conservative and liberal classes. For this model, I utilized all tweets collected from political accounts.
+For this analysis, I utilized ~136K tweets pulled from 612 Twitter accounts by me from the Twitter API. These accounts were manually selected by me to represent each account class that I am trying to predict. 
 
 # Exploratory Data Analysis
+The following top words were identified for each of the primary classifications in EDA:
 
+## Business
+
+## Politics
+
+## Sports / Entertainment
+
+## Science / Technology
 
 # Modeling
-For both models, I used NLP techniques and a Complement Naive Bayes Classifier to predict the primary interest of the user between the four categories and then to predict the political affiliation of political users.  The first step is preprocessing the tweets using NLTK, which includes tokenizing the tweets using a regular expression tokenizer, removing stop words, and stemming the words. This preprocessing step is performed on the 'tweet' column of the data and the result is stored in a new column 'preprocessed_tweet'.
-. I performed some manual preprocessing, then used a TFIDF vectorizor, then used a Complement Naive Bayes Classifier to fit the training data and predict the primary interest of the user and/or political affiliation.  
+The model created for the classification of users into the four primary segments is referred to as model 1. For model 1, I scaled down the population of political tweets used to train the model to a smaller dataset and separate file consisting of ~101K tweets.  Model 2 represents the secondary classfication of political users between conservative and liberal classes. For model 2, I utilized all political tweets from the complete dataset.
+
+For both models, I used NLP techniques and predictive modeling. The first step was preprocessing the tweets.  I lowered the case of all words, got rid of stopwords and numeric words, and then tokenized and lemmatized the remaining words.  I then used a TFIDF vectorizor.  After that, I used a Complement Naive Bayes Classifier to fit, train, and then test how well the models predicted the primary interest and, if political, the political affiliation of the user.   
+
 # Final Evaluation
+
+Model 1 predicts the primary interest of a user with 98% accuracy. If the primary interest of the user is politics, the user's tweets are run through model 2, which predicts the political affiliation of the user with 95% accuracy.
+
+These are very good results and should help Twitter improve its user segmentation and targeted advertising processes for a better user experience and better advertising metrics (clicks and conversions).
 
 # Next Steps
 Recommendation to Twitter for next steps: 
@@ -40,19 +50,26 @@ See the full analysis in the [Jupyter Notebook](./notebook_01_main.ipynb) or rev
 
 ```
 ├── images
-│   ├── slides_header.jpg
-│   ├── negative_words.png
-│   ├── positive_words.png
-│   ├── product_sentiment.png
-│   ├── tweets_by_company.png
+│   ├── header.png
+│   ├── business.png
+│   ├── sportsenter.png
+│   ├── politics.png
+│   ├── sciencetech.png
 ├── data
-│   ├── judge-1377884607_tweet_product_company.csv
-├── eda_notebooks
-│   ├── index_Nate - v3.ipynb.csv
-│   ├── index_just_eda_zach.ipynb
-├── notebook.ipynb
+│   ├── tweet_list.csv
+│   ├── tweet_list2.csv
+├── models
+│   ├── model1_model.pkl
+│   ├── model1_tfidf.pkl
+│   ├── model2_model.pkl
+│   ├── model2_tfidf.pkl
+├── notebook_01_main.ipynb
+├── notebook_02_data_collection.ipynb
+├── notebook_03_eda.ipynb
+├── notebook_04_deployment.ipynb
 ├── presentation.pdf
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 
