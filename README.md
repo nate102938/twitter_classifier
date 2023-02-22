@@ -7,9 +7,7 @@ The purpose of this classification system is more successful targeted advertisin
 
 # Business Understanding 
 
-The stakeholder is Twitter itself, and I'm illustrating to Twitter the ability to use NLP/predictive machine learning on a user's tweets to better segment its users for the purpose of targeted advertising.
-
-Having the ability to identify the primary interest of a user is invaluable for segmentation / targeted advertising.
+The stakeholder is Twitter itself, and I'm illustrating to Twitter the ability to use NLP/predictive machine learning on a user's tweets to better segment its users for the purpose of targeted advertising.  Having the ability to identify the primary interest of a user is invaluable for segmentation / targeted advertising.
 
 # Data Understanding
 For this analysis, I utilized ~136K tweets pulled from 612 Twitter accounts by me from the Twitter API. These accounts were manually selected by me to represent each account class that I am trying to predict.
@@ -26,20 +24,17 @@ For both models, I used NLP techniques and a Complement Naive Bayes Classifier t
 . I performed some manual preprocessing, then used a TFIDF vectorizor, then used a Complement Naive Bayes Classifier to fit the training data and predict the primary interest of the user and/or political affiliation.  
 # Final Evaluation
 
-# Recommendations
-Based on our analysis, we have two concrete recommendations for the Apple marketing team to implement going forward. First- look for more opportunities to do product launches at events. Twitter data indicated that the SXSW event in Austin went very well and generated a lot of positive online buzz. Second- as the iPhone sees improvements in battery life, make sure to strongly highlight these improvements in your advertising. Data indicated that there is a negative perception of the iPhone battery life, and therefore efforts to reduce this perception should bode well.
-
 # Next Steps
-In the future we’d like to add additional sources of customer sentiment into the analysis, such as data from Facebook and Instagram. The more examples of customer sentiment we have, the better we can predict outcomes and make recommendations. Finally, since customer preferences and attitudes are always evolving, we’d like to update the model and our analysis regularly so that your team can stay on top of trends and perceptions in real-time. Ultimately, we believe these efforts will lead to increased customer satisfaction.
+Recommendation to Twitter for next steps: 
+- Deploy the model at Twitter to better segment its users and improve targeted advertising.
+- Run the model routinely on all its users, as interests change with people over time.
 
 ## For More Information   
 
-See the full analysis in the [Jupyter Notebook](./index.ipynb) or review this [presentation](./presentation.pdf).
+See the full analysis in the [Jupyter Notebook](./notebook_01_main.ipynb) or review this [presentation](./presentation.pdf).
 
 **For additional info, contact:**
 - Nate Kist: natekist@outlook.com
-- Zach Cherna: zacharycherna@gmail.com
-- Jose Castillo: 114josecastillo@gmail.com 
 
 ## Repository Structure
 
