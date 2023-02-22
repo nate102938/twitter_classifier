@@ -16,12 +16,16 @@ For this analysis, I utilized ~136K tweets pulled from 612 Twitter accounts by m
 The following top words were identified for each of the primary classifications in EDA:
 
 ## Business
+![business](./images/business.png)
 
 ## Politics
+![politics](./images/politics.png)
 
 ## Sports / Entertainment
+![sportsenter](./images/sportsenter.png)
 
 ## Science / Technology
+![sciencetech](./images/sciencetech.png)
 
 # Modeling
 The model created for the classification of users into the four primary segments is referred to as model 1. For model 1, I scaled down the population of political tweets used to train the model to a smaller dataset and separate file consisting of ~101K tweets.  Model 2 represents the secondary classfication of political users between conservative and liberal classes. For model 2, I utilized all political tweets from the complete dataset.
