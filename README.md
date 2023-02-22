@@ -74,6 +74,7 @@ See the full analysis in the [Main Jupyter Notebook](./notebook_01_main.ipynb) o
 ├── data
 │   ├── tweet_list.csv
 │   ├── tweet_list2.csv
+│   ├── accounts.csv
 ├── models
 │   ├── model1_model.pkl
 │   ├── model1_tfidf.pkl
