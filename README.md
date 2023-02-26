@@ -1,9 +1,7 @@
 ![header](./images/header.png)
 # Overview
 
-The goal of this project is to create and deploy a model that can predict the primary interest of a Twitter user between the following four interests using the user's most recent tweets and NLP/predictive machine learning: Sports / Entertainment, Politics, Science / Technology, and Business. Also, if the user's primary interest is politics, a secondary goal was to to predict the user's political affiliation.
-
-The purpose of this classification system is more successful targeted advertising and for a more enjoyable user experience.
+The goal of this project is to create and deploy a model that can predict the primary interest of a Twitter user between the following four interests using the user's most recent tweets and NLP/predictive machine learning: Sports / Entertainment, Politics, Science / Technology, and Business. Also, if the user's primary interest is politics, a secondary goal was to to predict the user's political affiliation.  The purpose of this classification system is for more successful targeted advertising and for a more enjoyable user experience.
 
 # Business Understanding 
 
