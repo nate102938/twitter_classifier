@@ -1,4 +1,9 @@
 ![header](./images/header.png)
+
+## Twitter Ads 2.0
+**Predicting the primary interest and political affiliation of Twitter users**
+
+**Author**: [Nate Kist](mailto:natekist@outlook.com)
 # Overview
 
 The goal of this project is to create and deploy a model that can predict the primary interest of a Twitter user between the following four interests using the user's most recent tweets and NLP/predictive machine learning: Sports / Entertainment, Politics, Science / Technology, and Business. Also, if the user's primary interest is politics, a secondary goal was to to predict the user's political affiliation.  The purpose of this classification system is for more successful targeted advertising and for a more enjoyable user experience.
@@ -35,7 +40,7 @@ The following top words were identified for each of the primary classifications 
 # Modeling
 The model created for the classification of users into the four primary segments is referred to as model 1. For model 1, I scaled down the population of political tweets used to train the model to a smaller dataset and separate file consisting of ~101K tweets.  Model 2 represents the a classification of political users between conservative and liberal classes. For model 2, I utilized all political tweets from the complete dataset.
 
-For both models, I used NLP techniques and predictive modeling. The first step was preprocessing the tweets.  I lowered the case of all words, got rid of stopwords and numeric words, and then tokenized and lemmatized the remaining words.  I then used a TFIDF vectorizor.  After that, I used a Complement Naive Bayes Classifier to fit, train, and then test how well the models predicted the primary interest and, if political, the political affiliation of the user.   
+For both models, I used NLP techniques and classification algorithms. The first step was preprocessing the tweets.  I lowered the case of all words, got rid of stopwords and numeric words, and then tokenized and lemmatized the remaining words.  I then used a TFIDF vectorizor.  After that, I used a Complement Naive Bayes Classifier to fit, train, and then test how well the models predicted the primary interest and, if political, the political affiliation of the user.   
 
 # Final Evaluation
 
@@ -46,7 +51,7 @@ These are very good results and should help Twitter improve its user segmentatio
 # Model Deployment and Demonstration
 The vectorizer and model for both model 1 and model 2 were saved to file for deployment and demonstration purposes.    
 
-To demonstrate that the model works, I created a [Deployment Jupyter Notebook](./notebook_04_deployment.ipynb) that uses a Gradio web app to take in a Twitter handle of any twitter user that outputs the user's primary interest after running the user's most recent 200 tweets through the model(s).  
+To demonstrate that the model works, I created a [Deployment Jupyter Notebook](./notebook_04_deployment.ipynb) that uses a Gradio web app to take in a Twitter handle of any twitter user that outputs the user's primary interest after running the user's most recent 200 tweets through the model(s).    
 
 # Next Steps
 Recommendation to Twitter for next steps: 
