@@ -10,10 +10,10 @@ The goal of this project is to create and deploy a model that can predict the pr
 
 # Business Understanding 
 
-The stakeholder is Twitter itself, and I'm illustrating to Twitter the ability to use NLP/predictive machine learning on a user's tweets to better segment its users for the purpose of targeted advertising.  Having the ability to identify the primary interest of a user is invaluable for segmentation / targeted advertising.
+The stakeholder is Twitter itself, and I'm illustrating to Twitter the ability to use NLP/predictive machine learning on a user's tweets to better segment its users for the purpose of targeted advertising.  Having the ability to identify correctly categorize a user by their primary interest's is invaluable for segmentation and targeted advertising.
 
 # Data Understanding
-For this analysis, I utilized ~136K tweets pulled from 612 Twitter accounts by me from the Twitter API. These accounts were manually selected by me to represent each account class that I am trying to predict. 
+For this analysis, I utilized ~136K tweets pulled from 612 Twitter accounts by me from the Twitter API. These accounts were manually selected by me to represent each account class that I am trying to predict. To identify people interested in politics, I downloaded tweets from accounts of elected officials and other known political accounts.  To identify people interested in Sports and entertainment, I downloaded tweets from accounts of professsional athletes, sports news organizations, celebrity singers, and TV/movie stars.  To identify people interest in business, I downloaded tweets from business news accounts like Wall Street Journal and CNBC.  To identify people interested in science and technology, I downloaded tweets from accounts like NASA, SpaceX and Google AI.     
 
 Data collection was performed in a separate [Data Collection Jupyter Notebook](./notebook_02_data_collection.ipynb). 
 - The notebook uses the Tweepy package to download tweets for specified accounts from the Twitter API. In order to use the API, you need your own bearer key, which serves as your authentication into the API. If you are planning to use the API, put your bearer key into the variable 'bearer_key' in the constants section.  
