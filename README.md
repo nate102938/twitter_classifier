@@ -35,7 +35,7 @@ The following top words were identified for each of the primary classifications 
 ![sciencetech](./images/sciencetech.png)
 
 # Modeling
-The model created for the classification of users into the four primary segments is referred to as model 1. For model 1, I scaled down the population of political tweets used to train the model to a smaller dataset and separate file consisting of ~101K tweets.  Model 2 represents the secondary classfication of political users between conservative and liberal classes. For model 2, I utilized all political tweets from the complete dataset.
+The model created for the classification of users into the four primary segments is referred to as model 1. For model 1, I scaled down the population of political tweets used to train the model to a smaller dataset and separate file consisting of ~101K tweets.  Model 2 represents the a classification of political users between conservative and liberal classes. For model 2, I utilized all political tweets from the complete dataset.
 
 For both models, I used NLP techniques and predictive modeling. The first step was preprocessing the tweets.  I lowered the case of all words, got rid of stopwords and numeric words, and then tokenized and lemmatized the remaining words.  I then used a TFIDF vectorizor.  After that, I used a Complement Naive Bayes Classifier to fit, train, and then test how well the models predicted the primary interest and, if political, the political affiliation of the user.   
 
