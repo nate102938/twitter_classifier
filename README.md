@@ -48,7 +48,7 @@ These are very good results and should help Twitter improve its user segmentatio
 # Model Deployment and Demonstration
 The vectorizer and model for both model 1 and model 2 were saved to file for deployment and demonstration purposes.    
 
-To demonstrate that the model works, I created a [Deployment Jupyter Notebook](./notebook_04_deployment.ipynb) that uses a Gradio web app to take in a Twitter handle of any twitter user and it outputs the user's primary interest after running the user's most recent 200 tweets through the model(s).  
+To demonstrate that the model works, I created a [Deployment Jupyter Notebook](./notebook_04_deployment.ipynb) that uses a Gradio web app to take in a Twitter handle of any twitter user that outputs the user's primary interest after running the user's most recent 200 tweets through the model(s).  
 
 # Next Steps
 Recommendation to Twitter for next steps: 
